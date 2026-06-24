@@ -1,0 +1,249 @@
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header & Navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.h-left, .h-right {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.divider {
+    border-left: 1px solid black;
+    height: 1.5em;
+    margin: 0 1em;
+}
+
+.h-left a, .h-right a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+.h-left a:hover, .h-right a:hover {
+    color: gray;
+}
+
+.h-right {
+    gap: 1em;
+    text-transform: capitalize;
+}
+
+/* Dropdown Menu */
+.drp {
+    position: relative;
+}
+
+.drp_btn {
+    background-color: brown;
+    color: white !important;
+    border-radius: 10px;
+    padding: 0.4em 1em;
+}
+
+.drp_cnt {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(253, 240, 226);
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    list-style: none;
+    padding: 1em;
+    width: 150px;
+    text-align: center;
+}
+
+.drp_cnt li {
+    background-color: rgb(175, 90, 0);
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.drp_cnt li:last-child {
+    margin-bottom: 0;
+}
+
+.drp_cnt li a {
+    color: white !important;
+    display: block;
+    padding: 0.8em;
+    font-size: 1em;
+}
+
+.drp_cnt li:hover {
+    background-color: brown;
+}
+
+.drp:hover .drp_cnt {
+    display: block;
+}
+
+/* Main Content Containers */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+.section-container {
+    margin-bottom: 4em;
+    padding-top: 2em;
+}
+
+h2 {
+    border-bottom: 2px solid brown;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+}
+
+/* Intro Section */
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4em;
+    margin-bottom: 5em;
+    padding-top: 3em;
+}
+
+.intro_text h1 {
+    font-size: 3em;
+    margin-bottom: 0.2em;
+    text-transform: uppercase;
+}
+
+.summary {
+    text-align: justify;
+    font-size: 1.1em;
+    color: #555;
+}
+
+.intro img {
+    height: 20em;
+    width: 20em;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: -10px -10px 0px 4px rgba(175, 90, 0, 0.2);
+}
+
+/* Cards for Experience, Projects, Education */
+.card {
+    background-color: #f9f9f9;
+    padding: 1.5em;
+    margin-bottom: 1.5em;
+    border-left: 4px solid brown;
+    border-radius: 0 5px 5px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+    margin-top: 0;
+    margin-bottom: 0.2em;
+    color: brown;
+}
+
+.card p {
+    margin: 0.5em 0;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 1em;
+    color: rgb(175, 90, 0);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+/* Skills Section */
+.skills-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+
+.skill-category {
+    flex: 1;
+    min-width: 250px;
+    background-color: rgb(253, 240, 226);
+    padding: 1.5em;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.skill-category h3 {
+    color: brown;
+    margin-top: 0;
+}
+
+/* Hobbies Section */
+.hobbies-flex {
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+}
+
+.hobby {
+    text-align: center;
+    max-width: 300px;
+}
+
+.hobby img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 3em 1em;
+    margin-top: 4em;
+}
+
+footer h2 {
+    border-bottom: none;
+    color: white;
+}
+
+footer a {
+    color: rgb(253, 240, 226);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
